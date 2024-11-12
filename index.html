@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh My Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+<header class="white-bg">
+    <img id="logo" src="./assets/images/logo/ohmyfood.png" width="162" height="27.7" alt="Image du logo Oh My Food">
+    <form id="search-bar">
+        <label for="search-input">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        </label>
+        <input id="search-input" type="text" placeholder="Paris, Belleville"/>
+    </form>
+</header>
+<main>
+<section id="section-intro">
+   <h1>Réservez le menu qui vous convient</h1>
+   <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+   <a href="#section-restaurants" class="btn btn-link">Explorer nos restaurants</a>
+</section>
+<section id="section-steps" class="white-bg">
+    <h1>Fonctionnement</h1>
+    <div id="steps">
+        <div class="step">
+            <span class="circle-icon">1</span>
+            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+            <span>Choisissez un restaurant</span>
+        </div>
+        <div class="step">
+            <span class="circle-icon">2</span>
+            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+            <span>Composez votre menu</span>
+        </div>
+        <div class="step">
+            <span class="circle-icon">3</span>
+            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+            <span>Dégustez au restaurant</span>
+        </div>
+    </div>
+</section>
+<section id="section-restaurants">
+    <h1>Restaurants</h1>
+    <div id="restaurant-cards">
+    </div>        
+</section>
+</main>
+<footer>
+</footer>
+</body>

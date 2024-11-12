@@ -1,0 +1,173 @@
+
+/********* General *********/
+
+:root {
+    --main-bg-color: #F6F6F6;
+    --search-bg-color: #EAEAEA;
+    --icon-color: #9356DC;
+
+    --color1: #F3F3F3;
+    --color2: #99E2D0;
+    --color3: #008766;
+    --color4: #89C8FA;
+    --color5: #003A68;
+
+    font-family: 'Roboto ', sans-serif;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+body {
+    min-width: 300px;
+    margin: 0;
+    background-color: var(--main-bg-color);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28.13px;
+    margin: 0 0 25px;
+}
+
+input, button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+}
+
+input {
+    padding: 0;
+}
+
+button {
+    border-width: 0;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+/********** Header **********/
+
+#logo {
+    display: block;
+    width: 162px;
+    height: 27.7px;
+    padding: 22.3px 0 13px;
+    margin: auto;
+}
+
+#search-bar {
+    text-align: center;
+    background-color: var(--search-bg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#search-input {
+    width: 109px;
+    height: 50px;
+    padding: 0;
+    margin-left: 17px;
+    border-width: 0;
+    background-color: var(--search-bg-color);
+}
+
+/********** Intro **********/
+
+#section-intro {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#section-intro h1 {
+    padding: 0 40px;
+}
+
+#section-intro p {
+    font-size: 18px;
+    line-height: 21.09px;
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.btn-link  {
+    display: block;
+    width: 218px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+}
+
+.btn {
+    color: white;
+    border-radius: 25px;
+    background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    opacity: 0.85;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+/********** Fonctionnement **********/
+
+#section-steps {
+    padding: 40px 20px;
+}
+
+#steps {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 12px;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 70px;
+    padding: 0 20px 0 30px;
+    border-radius: 25px;
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.circle-icon {
+    position: absolute;
+    left: -12px;
+    font-size: 14px;
+    color: white;
+    padding: 2px 8px;
+    background-color: var(--icon-color);
+    border-radius: 50%;
+}
+
+.fa-mobile-screen-button {
+    color: var(--icon-color);
+    font-size: 20px;
+}
+
+.step span {
+    font-weight: bold;
+}
+
+/********** Restaurants **********/
+
+#section-restaurants {
+    padding: 40px 20px;
+}
