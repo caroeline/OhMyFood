@@ -1,0 +1,44 @@
+
+/********** Fonts **********/
+
+@mixin text-info($size-px, $weight: null) {
+	line-height: $size-px + 4px;
+	font-size: $size-px;
+	@if ($weight) {
+		font-weight: $weight;
+	}
+}
+
+:root {
+	font-family: 'Roboto', sans-serif;
+}
+
+:root, p {
+	@include text-info(15px, 300);
+}
+
+h1 {
+	@include text-info(24px, bold);
+
+}
+
+h2, a, input {
+	@include text-info(16px);
+}
+
+#intro-subtext,
+.item-text {
+	@include text-info(17px);
+}
+
+input,
+.btn-link,
+.step-description,
+.footer-link {
+	font-weight: 500;
+}
+
+.item-text,
+.item-price {
+	font-weight: bold;
+}
