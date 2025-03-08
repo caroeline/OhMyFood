@@ -1,3 +1,4 @@
+@use 'abstract' as *;
 
 /********** General **********/
 
@@ -26,6 +27,14 @@ main {
 
 :root {
 	--spacing: 25px;
+
+	@include media-mid {
+		--spacing: 30px;
+	}
+
+	@include media-large {
+		--spacing: 40px;
+	}
 }
 
 .section-pad {
@@ -97,6 +106,17 @@ main {
 	height: 70px;
 	text-align: center;
 	align-content: center;
+
+	@include media-large {
+		height: 100px;
+	}
+}
+
+#header-logo-img {
+	@include media-large {
+		width: 200px;
+		height: auto;
+	}
 }
 
 /********** Page footer **********/
@@ -110,10 +130,25 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+
+	@include media-large {
+		flex-direction: row;
+		justify-content: end;
+		gap: 20px;
+
+		> li:first-child {
+			order: 1;
+		}
+	}
 }
 
 #footer-logo-img {
 	margin-bottom: 5px;
+
+	@include media-large {
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
 }
 
 .footer-link {
