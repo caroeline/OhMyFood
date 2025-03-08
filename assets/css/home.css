@@ -24,6 +24,7 @@ input, button {
   font-family: "Roboto", sans-serif;
 }
 
+/********** Mixins **********/
 /********** Fonts **********/
 :root {
   font-family: "Roboto", sans-serif;
@@ -90,6 +91,16 @@ main {
 :root {
   --spacing: 25px;
 }
+@media screen and (min-width: 600px) {
+  :root {
+    --spacing: 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  :root {
+    --spacing: 40px;
+  }
+}
 
 .section-pad {
   max-width: 1100px;
@@ -154,6 +165,18 @@ main {
   text-align: center;
   align-content: center;
 }
+@media screen and (min-width: 1000px) {
+  #header-logo-bar {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #header-logo-img {
+    width: 200px;
+    height: auto;
+  }
+}
 
 /********** Page footer **********/
 #page-footer {
@@ -166,9 +189,25 @@ main {
   flex-direction: column;
   gap: 8px;
 }
+@media screen and (min-width: 1000px) {
+  #footer-links-list {
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+  }
+  #footer-links-list > li:first-child {
+    order: 1;
+  }
+}
 
 #footer-logo-img {
   margin-bottom: 5px;
+}
+@media screen and (min-width: 1000px) {
+  #footer-logo-img {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
 }
 
 .footer-link {
@@ -190,11 +229,21 @@ h1 {
 #header-logo-bar {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 1000px) {
+  #header-logo-bar {
+    box-shadow: initial;
+  }
+}
 
 #search-bar {
   position: relative;
   background-color: var(--search-bar-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 1000px) {
+  #search-bar {
+    box-shadow: initial;
+  }
 }
 
 #search-form {
@@ -225,6 +274,12 @@ h1 {
 #intro-section > h1 {
   padding: 0 30px;
 }
+@media screen and (min-width: 1000px) {
+  #intro-section > h1 {
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
 
 #intro-subtext {
   margin-bottom: 20px;
@@ -244,6 +299,18 @@ h1 {
   padding: 0 0 12px 12px;
   margin: auto;
 }
+@media screen and (min-width: 600px) {
+  #steps-box {
+    align-items: center;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #steps-box {
+    flex-direction: row;
+    padding-left: 12px;
+  }
+}
 
 .step-box {
   position: relative;
@@ -253,6 +320,16 @@ h1 {
   background-color: var(--main-bg-color);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .step-box {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .step-box {
+    flex: 1;
+  }
 }
 
 .circle-icon {
@@ -299,6 +376,11 @@ h1 {
   max-width: 1100px;
   margin: auto;
 }
+@media screen and (min-width: 600px) {
+  .restaurant-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .restaurant-card {
   position: relative;
@@ -320,6 +402,7 @@ h1 {
   display: block;
   object-fit: cover;
   width: 100%;
+  height: auto;
 }
 
 .new-label {
