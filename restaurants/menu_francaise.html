@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Oh My Food</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400&display=swap"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		crossorigin="anonymous" referrerpolicy="no-referrer" integrity=""/>
+	<link rel="stylesheet" href="../assets/css/restaurants.css"/>
+</head>
+
+<body>
+<header id="page-header">
+	<a id="back-btn-link" href="../index.html">
+		<i class="fa-arrow-left fa-solid" aria-hidden="true"></i>
+	</a>
+	<div id="header-logo-bar">
+		<img id="header-logo-img" src="../assets/images/logo/ohmyfood.svg" width="160" height="28" alt="Oh My Food site logo"/>
+	</div>
+	<img id="header-restaurant-img"
+		src="../assets/images/restaurants/a_la_francaise_high.jpg" 
+		srcset="
+			../assets/images/restaurants/a_la_francaise_mid.jpg 500w,
+			../assets/images/restaurants/a_la_francaise_high.jpg 4000w"
+		sizes="(max-width: 600px) 100px, 100vw"
+		width="500" height="281"
+		alt="Image d'une table avec un plat"/>
+</header>
+<main>
+	<header id="menu-header">
+		<h1>À la française</h1>
+		<label>
+			<input id="heart-cb" class="heart-cb" type="checkbox"/>
+			<i class="fa-heart fa-regular" aria-hidden="true">
+				<i class="fa-heart fa-solid" aria-hidden="true"></i>
+			</i>
+		</label>
+	</header>
+	<section class="menu-section">
+		<h2>ENTRÉES</h2>
+		<div class="menu-item">
+			<input id="item-cb1" class="item-cb" type="checkbox"/>
+			<div class="item-description">
+				<p class="item-text">Tartare de poulpe acidulé</p>
+				<p class="item-subtext">Aux zestes d'orange</p>
+			</div>
+			<p class="item-price">25 €</p>
+			<div class="item-checked">
+				<i class="fa-circle-check fa-solid" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="menu-item">
+			<input id="item-cb2" class="item-cb" type="checkbox"/>
+			<div class="item-description">
+				<p class="item-text">Velouté de légumes d'antan</p>
+				<p class="item-subtext">Carotte, panais, topinambour</p>
+			</div>
+			<p class="item-price">35 €</p>
+			<div class="item-checked">
+				<i class="fa-circle-check fa-solid" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="menu-item">
+			<input id="item-cb3" class="item-cb" type="checkbox"/>
+			<div class="item-description">
+				<p class="item-text">Soupe à l'oignon</p>
+				<p class="item-subtext">Revisitée</p>
+			</div>
+			<p class="item-price">20 €</p>
+			<div class="item-checked">
+				<i class="fa-circle-check fa-solid" aria-hidden="true"></i>
+			</div>
+		</div>
+	</section>
+	<section class="menu-section">
+		<h2>PLATS</h2>
+		<div class="menu-item">
+			<input id="item-cb4" class="item-cb" type="checkbox"/>
+			<div class="item-description">
+				<p class="item-text">Coquilles Saint-Jacques</p>
+				<p class="item-subtext">Accompagnées d'une purée de panais</p>
+			</div>
+			<p class="item-price">40 €</p>
+			<div class="item-checked">
+				<i class="fa-circle-check fa-solid" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="menu-item">
+			<input id="item-cb5" class="item-cb" type="checkbox"/>
+			<div class="item-description">
+				<p class="item-text">Magret de canard</p>
+				<p class="item-subtext">Et parmentier de pommes de terre</p>
+			</div>
+			<p class="item-price">35 €</p>
+			<div class="item-checked">
+				<i class="fa-circle-check fa-solid" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="menu-item">
+			<input id="item-cb6" class="item-cb" type="checkbox"/>
+			<div class="item-description">
+				<p class="item-text">Pigeonneau d’Ille-et-Vilaine</p>
+				<p class="item-subtext">Sur son lit de gnocchis aux légumes</p>
+			</div>
+			<p class="item-price">44 €</p>
+			<div class="item-checked">
+				<i class="fa-circle-check fa-solid" aria-hidden="true"></i>
+			</div>
+		</div>
+	</section>
+	<section class="menu-section">
+		<h2>DESSERTS</h2>
+		<div class="menu-item">
+			<input id="item-cb7" class="item-cb" type="checkbox"/>
+			<div class="item-description">
+				<p class="item-text">Pétales de violettes glacés</p>
+				<p class="item-subtext">Et purée de noisettes</p>
+			</div>
+			<p class="item-price">18 €</p>
+			<div class="item-checked">
+				<i class="fa-circle-check fa-solid" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="menu-item">
+			<input id="item-cb8" class="item-cb" type="checkbox"/>
+			<div class="item-description">
+				<p class="item-text">Fondant au chocolat</p>
+				<p class="item-subtext">Revisité</p>
+			</div>
+			<p class="item-price">22 €</p>
+			<div class="item-checked">
+				<i class="fa-circle-check fa-solid" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="menu-item">
+			<input id="item-cb9" class="item-cb" type="checkbox"/>
+			<div class="item-description">
+				<p class="item-text">Millefeuille croustillant</p>
+				<p class="item-subtext">Myrtilles et pâte d’amande</p>
+			</div>
+			<p class="item-price">23 €</p>
+			<div class="item-checked">
+				<i class="fa-circle-check fa-solid" aria-hidden="true"></i>
+			</div>
+		</div>
+	</section>
+	<a class="btn-link" href="#">Commander</a>
+</main>
+<footer id="page-footer">
+	<nav>
+		<ul id="footer-links-list">
+			<li><img id="footer-logo-img" src="../assets/images/logo/ohmyfood_white.svg" width="100" height="17" alt="Oh My Food site logo"/></li>
+			<li>
+				<a class="footer-link" href="#">
+					<i class="fa-utensils fa-solid" aria-hidden="true"></i>
+					Proposer un restaurant
+				</a>
+			</li>
+			<li>
+				<a class="footer-link" href="#">
+					<i class="fa-handshake-angle fa-solid" aria-hidden="true"></i>
+					Devenir partenaire
+				</a>
+			</li>
+			<li><a class="footer-link" href="#">Mentions légales</a></li>
+			<li><a class="footer-link" href="mailto:contact@ohmyfood.com">Contact</a></li>
+		</ul>
+	</nav>
+</footer>
+</body>
