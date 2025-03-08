@@ -1,0 +1,17 @@
+
+/********** Mixins **********/
+
+$screen-mid: 600px;
+$screen-large: 1000px;
+
+@mixin media-mid {
+	@media screen and (min-width: $screen-mid) {
+		@content;
+	}
+}
+
+@mixin media-large {
+	@media screen and (min-width: $screen-large) {
+		@content;
+	}
+}
